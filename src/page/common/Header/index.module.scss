@@ -1,0 +1,58 @@
+@function sp($pxValue) {
+    $spBreakPoint: 375;
+    @return (($pxValue / $spBreakPoint) * 100) + vw;
+}
+
+@function ps($pxValue) {
+    $psBreakPoint: 750;
+    @return (($pxValue / $psBreakPoint) * 100) + vw;
+}
+
+@function pc($pxValue) {
+    $pcBreakPoint: 750;
+    @return (($pxValue / $pcBreakPoint) * 100) + vw;
+}
+
+//共通 375px
+
+.header {
+    display: flex;
+    height: 70px;
+    padding: 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+
+    &_logo {
+        &_img {
+            width: 119.987px;
+            height: 25.539px;
+        }
+    }
+    &_snsWrap {
+        display: flex;
+        &_listItem {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_x,
+            &_insta {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 376px) and (max-width: 768px)
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 0px 24px;
+    }
+}
