@@ -1,37 +1,40 @@
 import Image from "next/image";
-import { worksType } from "../../../detileInfo";
+import { DetileEreaType } from "../../../detileInfo";
 import styles from "./index.module.scss";
 import Link from "next/link";
 
-const DetileErea = (props: worksType) => {
+const DetileErea = ({
+  scoop,
+  tool,
+  schedule,
+  prototypeURL,
+  CreationFlow_spTb,
+  CreationFlow_pc,
+}: DetileEreaType) => {
   return (
     <div className={styles.detileErea}>
       <div className={styles.detileErea__inner}>
         <ul className={styles.detileErea__itemList}>
           <li className={styles.detileErea__itemList_item}>
             <p className={styles.detileErea__itemList_item_ttl}>担当範囲</p>
-            <p className={styles.detileErea__itemList_item_txt}>
-              {props.scoop}
-            </p>
+            <p className={styles.detileErea__itemList_item_txt}>{scoop}</p>
           </li>
           <li className={styles.detileErea__itemList_item}>
             <p className={styles.detileErea__itemList_item_ttl}>ツール</p>
-            <p className={styles.detileErea__itemList_item_txt}>{props.tool}</p>
+            <p className={styles.detileErea__itemList_item_txt}>{tool}</p>
           </li>
           <li className={styles.detileErea__itemList_item}>
             <p className={styles.detileErea__itemList_item_ttl}>制作期間</p>
-            <p className={styles.detileErea__itemList_item_txt}>
-              {props.schedule}
-            </p>
+            <p className={styles.detileErea__itemList_item_txt}>{schedule}</p>
           </li>
-          {props.prototypeURL ? (
+          {prototypeURL !== "undefined" ? (
             <li className={styles.detileErea__itemList_item}>
               <p className={styles.detileErea__itemList_item_ttl}>
                 プロトタイプ
               </p>
               <a
                 className={`${styles.detileErea__itemList_item_txt} ${styles.detileErea__itemList_item_protoTypeURL}`}
-                href={props.prototypeURL}
+                href={prototypeURL}
               >
                 表示する
                 <span className={styles.detileErea__itemList_item_iconWrap}>
@@ -53,14 +56,14 @@ const DetileErea = (props: worksType) => {
           <li className={styles.detileErea__itemList_item_flow}>
             <p className={styles.detileErea__itemList_item_ttl}>作成フロー</p>
             <Image
-              src={props.CreationFlow_spTb}
+              src={CreationFlow_spTb}
               width={343}
               height={119.78}
               alt={""}
               className={styles.detileErea__itemList_item_img_spTb}
             />
             <Image
-              src={props.CreationFlow_pc}
+              src={CreationFlow_pc}
               width={343}
               height={119.78}
               alt={""}

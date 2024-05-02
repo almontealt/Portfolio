@@ -1,9 +1,36 @@
 import Image from "next/image";
-import { worksType } from "../../../detileInfo";
+import { DetileOverViewType } from "../../../detileInfo";
 import styles from "./index.module.scss";
 
-const DetileOverView = (props: worksType) => {
-  console.log(props.IllustrationSp);
+const DetileOverView = ({
+  purpose1,
+  purpose2,
+  purpose3,
+  concept1,
+  concept2,
+  concept3,
+  target1,
+  target2,
+  target3,
+  target4,
+  IllustrationSp,
+  IllustrationPcTb,
+  oneKnotTtl,
+  oneKnotTxt1,
+  oneKnotTxt2,
+  oneKnotTxt3,
+  oneKnotTxt4,
+  oneKnotTxt5,
+  twoKnotTtl,
+  twoKnotTxt1,
+  twoKnotTxt2,
+  ImprovementPoints1,
+  ImprovementPoints2,
+  ImprovementPoints3,
+}: DetileOverViewType) => {
+  console.log(IllustrationSp);
+  console.log(IllustrationPcTb);
+
   return (
     <div className={styles.detileOverView}>
       <div className={styles.detileOverView__inner}>
@@ -20,28 +47,28 @@ const DetileOverView = (props: worksType) => {
                 >
                   ・
                 </span>
-                {props.purpose1}
+                {purpose1}
               </li>
-              {props.purpose2 ? (
+              {purpose2 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.purpose2}
+                  {purpose2}
                 </li>
               ) : (
                 <></>
               )}
-              {props.purpose3 ? (
+              {purpose3 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.purpose3}
+                  {purpose3}
                 </li>
               ) : (
                 <></>
@@ -61,28 +88,28 @@ const DetileOverView = (props: worksType) => {
                 >
                   ・
                 </span>
-                {props.concept1}
+                {concept1}
               </li>
-              {props.concept2 ? (
+              {concept2 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.concept2}
+                  {concept2}
                 </li>
               ) : (
                 <></>
               )}
-              {props.concept3 ? (
+              {concept3 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.concept3}
+                  {concept3}
                 </li>
               ) : (
                 <></>
@@ -102,41 +129,41 @@ const DetileOverView = (props: worksType) => {
                 >
                   ・
                 </span>
-                {props.target1}
+                {target1}
               </li>
-              {props.target2 ? (
+              {target2 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.target2}
+                  {target2}
                 </li>
               ) : (
                 <></>
               )}
 
-              {props.target3 ? (
+              {target3 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.target3}
+                  {target3}
                 </li>
               ) : (
                 <></>
               )}
-              {props.target4 ? (
+              {target4 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.target4}
+                  {target4}
                 </li>
               ) : (
                 <></>
@@ -146,9 +173,9 @@ const DetileOverView = (props: worksType) => {
         </ul>
 
         {/* 中間IMG  */}
-        {props.IllustrationSp ? (
+        {IllustrationSp !== "undefined" ? (
           <Image
-            src={props.IllustrationSp}
+            src={IllustrationSp as string}
             width={375}
             height={50}
             // fill
@@ -158,9 +185,9 @@ const DetileOverView = (props: worksType) => {
         ) : (
           <></>
         )}
-        {props.IllustrationPcTb ? (
+        {IllustrationPcTb !== "undefined" ? (
           <Image
-            src={props.IllustrationPcTb}
+            src={IllustrationPcTb as string}
             width={375}
             height={50}
             // fill
@@ -183,9 +210,9 @@ const DetileOverView = (props: worksType) => {
           <div className={styles.detileOverView__itemList_item_subOverWrap}>
             <div className={styles.detileOverView__itemList_item_subWrap}>
               {/* 情報設計・デザインの子要素2があれば,子要素のタイトルを表示する（出張経費申請サービスのみ表示） */}
-              {props.oneKnotTtl ? (
+              {oneKnotTtl !== "undefined" ? (
                 <h4 className={styles.detileOverView__itemList_item_subTtl}>
-                  {props.oneKnotTtl}
+                  {oneKnotTtl}
                 </h4>
               ) : (
                 <></>
@@ -197,9 +224,9 @@ const DetileOverView = (props: worksType) => {
                   >
                     ・
                   </span>
-                  {props.oneKnotTxt1}
+                  {oneKnotTxt1}
                 </li>
-                {props.oneKnotTxt2 ? (
+                {oneKnotTxt2 !== "undefined" ? (
                   <li
                     className={styles.detileOverView__itemList_item_detile_txt}
                   >
@@ -210,12 +237,12 @@ const DetileOverView = (props: worksType) => {
                     >
                       ・
                     </span>
-                    {props.oneKnotTxt2}
+                    {oneKnotTxt2}
                   </li>
                 ) : (
                   <></>
                 )}
-                {props.oneKnotTxt3 ? (
+                {oneKnotTxt3 !== "undefined" ? (
                   <li
                     className={styles.detileOverView__itemList_item_detile_txt}
                   >
@@ -226,12 +253,12 @@ const DetileOverView = (props: worksType) => {
                     >
                       ・
                     </span>
-                    {props.oneKnotTxt3}
+                    {oneKnotTxt3}
                   </li>
                 ) : (
                   <></>
                 )}
-                {props.oneKnotTxt4 ? (
+                {oneKnotTxt4 !== "undefined" ? (
                   <li
                     className={styles.detileOverView__itemList_item_detile_txt}
                   >
@@ -242,12 +269,12 @@ const DetileOverView = (props: worksType) => {
                     >
                       ・
                     </span>
-                    {props.oneKnotTxt4}
+                    {oneKnotTxt4}
                   </li>
                 ) : (
                   <></>
                 )}
-                {props.oneKnotTxt5 ? (
+                {oneKnotTxt5 !== "undefined" ? (
                   <li
                     className={styles.detileOverView__itemList_item_detile_txt}
                   >
@@ -258,7 +285,7 @@ const DetileOverView = (props: worksType) => {
                     >
                       ・
                     </span>
-                    {props.oneKnotTxt5}
+                    {oneKnotTxt5}
                   </li>
                 ) : (
                   <></>
@@ -267,10 +294,10 @@ const DetileOverView = (props: worksType) => {
             </div>
 
             {/* 情報設計・デザインの子要素2があれば表示する（出張経費申請サービスのみ表示） */}
-            {props.twoKnotTtl ? (
+            {twoKnotTtl !== "undefined" ? (
               <div className={styles.detileOverView__itemList_item_subWrap}>
                 <h4 className={styles.detileOverView__itemList_item_subTtl}>
-                  {props.twoKnotTtl}
+                  {twoKnotTtl}
                 </h4>
                 <ul className={styles.detileOverView__itemList_item_detileWrap}>
                   <li
@@ -283,7 +310,7 @@ const DetileOverView = (props: worksType) => {
                     >
                       ・
                     </span>
-                    {props.twoKnotTxt1}
+                    {twoKnotTxt1}
                   </li>
                   <li
                     className={styles.detileOverView__itemList_item_detile_txt}
@@ -295,7 +322,7 @@ const DetileOverView = (props: worksType) => {
                     >
                       ・
                     </span>
-                    {props.twoKnotTxt2}
+                    {twoKnotTxt2}
                   </li>
                 </ul>
               </div>
@@ -306,7 +333,7 @@ const DetileOverView = (props: worksType) => {
         </li>
 
         {/* 改善点 */}
-        {props.ImprovementPoints1 ? (
+        {ImprovementPoints1 !== "undefined" ? (
           <li className={styles.detileOverView__itemList_item}>
             <h3 className={styles.detileOverView__itemList_item_ttl}>改善点</h3>
             <ul className={styles.detileOverView__itemList_item_detileWrap}>
@@ -316,29 +343,29 @@ const DetileOverView = (props: worksType) => {
                 >
                   ・
                 </span>
-                {props.ImprovementPoints1}
+                {ImprovementPoints1}
               </li>
-              {props.ImprovementPoints2 ? (
+              {ImprovementPoints2 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.ImprovementPoints2}
+                  {ImprovementPoints2}
                 </li>
               ) : (
                 <></>
               )}
 
-              {props.ImprovementPoints3 ? (
+              {ImprovementPoints3 !== "undefined" ? (
                 <li className={styles.detileOverView__itemList_item_detile_txt}>
                   <span
                     className={styles.detileOverView__itemList_item_detile_icon}
                   >
                     ・
                   </span>
-                  {props.ImprovementPoints3}
+                  {ImprovementPoints3}
                 </li>
               ) : (
                 <></>

@@ -1,8 +1,14 @@
-import { worksType } from "../../../detileInfo";
+import { DetileTopType } from "../../../detileInfo";
 import styles from "./index.module.scss";
 import Image from "next/image";
 
-const DetileTop = (props: worksType) => {
+const DetileTop = ({
+  TopImage,
+  category,
+  title,
+  Isclient,
+  overView,
+}: DetileTopType) => {
   if (typeof window === "object") {
     //documentを使う関数を入れる
   }
@@ -11,35 +17,33 @@ const DetileTop = (props: worksType) => {
     <section className={styles.detileTop}>
       <div className={styles.detileTop__inner}>
         <Image
-          src={props.TopImage}
+          src={TopImage}
           width={480}
           height={294}
           alt=""
           className={`${
-            props.category === "Banner"
+            category === "Banner"
               ? styles.detileTop__mainImg_Banner
               : styles.detileTop__mainImg
           }`}
         />
         <ul className={styles.detileTop__itemList}>
           <li className={styles.detileTop__itemList_item}>
-            <h2 className={styles.detileTop__itemList_item_ttl}>
-              {props.title}
-            </h2>
+            <h2 className={styles.detileTop__itemList_item_ttl}>{title}</h2>
             <ul className={styles.detileTop__itemList_item_description}>
               <li className={styles.detileTop__itemList_item_description_txt}>
-                {props.category}
+                {category}
               </li>
               <li className={styles.detileTop__itemList_item_description_txt}>
                 /
               </li>
               <li className={styles.detileTop__itemList_item_description_txt}>
-                {props.Isclient}
+                {Isclient}
               </li>
             </ul>
           </li>
           <li className={styles.detileTop__itemList_item_description_overView}>
-            {props.overView}
+            {overView}
           </li>
         </ul>
       </div>
