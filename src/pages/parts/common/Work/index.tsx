@@ -55,11 +55,11 @@ const Works = () => {
 
     // ---
     mainVisual_sp:
-      "/BusinessTripExpenseApplicationService/BusinessTripExpenseApplicationService_spTbPc.jpg",
+      "/BusinessTripExpenseApplicationService/BusinessTripExpenseApplicationService_spTbPc.svg",
     mainVisual_tb:
-      "/BusinessTripExpenseApplicationService/BusinessTripExpenseApplicationService_spTbPc.jpg",
+      "/BusinessTripExpenseApplicationService/BusinessTripExpenseApplicationService_spTbPc.svg",
     mainVisual_pc:
-      "/BusinessTripExpenseApplicationService/BusinessTripExpenseApplicationService_spTbPc.jpg",
+      "/BusinessTripExpenseApplicationService/BusinessTripExpenseApplicationService_spTbPc.svg",
   };
   // サブスク管理アプリ
   const SubscriptionManagementApp: worksType = {
@@ -130,8 +130,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/fiveStepFlow_spTb.jpg",
-    CreationFlow_pc: "/fiveStepFlow_pc.jpg",
+    CreationFlow_spTb: "/5StepFlow_sp.svg",
+    CreationFlow_pc: "/5StepFlow_pc.svg",
     // ---
     purpose1:
       "ユーザーに自分の学習方法のタイプを知ってもらい、効率よく学習してもらう",
