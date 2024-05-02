@@ -18,8 +18,8 @@ const Works = () => {
     schedule: "2024/2/22~2/23",
     prototypeURL:
       "https://www.figma.com/proto/AANQJcihFsrTJAPIVfbH5C/Bono(%E4%BF%AE%E6%AD%A3%E7%94%A8)?page-id=0%3A1&type=design&node-id=1-795&viewport=6562%2C733%2C0.2&t=LrVjfnCPCM7pLHXE-1&scaling=min-zoom&starting-point-node-id=1%3A239&mode=design",
-    CreationFlow_spTb: "/sixStepFlow_sp.jpg",
-    CreationFlow_pc: "/sixStepFlow_pc.jpg",
+    CreationFlow_spTb: "/sixStepFlow_sp.svg",
+    CreationFlow_pc: "/sixStepFlow_pc.svg",
 
     // ---
     purpose1:
@@ -75,8 +75,8 @@ const Works = () => {
     schedule: "2024/1/22~1/27",
     prototypeURL:
       "https://www.figma.com/proto/NmlhQbTrrFIDBw17DIfjFj/%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA?page-id=119%3A8573&type=design&node-id=119-8842&viewport=1140%2C922%2C0.13&t=b5NGnvkSL2tFR4ZZ-1&scaling=min-zoom&starting-point-node-id=119%3A8936&mode=design",
-    CreationFlow_spTb: "/sixStepFlow_sp.jpg",
-    CreationFlow_pc: "/sixStepFlow_pc.jpg",
+    CreationFlow_spTb: "/sixStepFlow_sp.svg",
+    CreationFlow_pc: "/sixStepFlow_pc.svg",
     // ---
     purpose1:
       "なんのサブスクに入っているか不明で、無駄な支出（=サブスク）がないか確認したい",
@@ -130,8 +130,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/5StepFlow_sp.svg",
-    CreationFlow_pc: "/5StepFlow_pc.svg",
+    CreationFlow_spTb: "/fiveStepFlow_spTb.svg",
+    CreationFlow_pc: "/fiveStepFlow_pc.svg",
     // ---
     purpose1:
       "ユーザーに自分の学習方法のタイプを知ってもらい、効率よく学習してもらう",
@@ -212,8 +212,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/fiveStepFlow_spTb.jpg",
-    CreationFlow_pc: "/fiveStepFlow_pc.jpg",
+    CreationFlow_spTb: "/fiveStepFlow_spTb.svg",
+    CreationFlow_pc: "/fiveStepFlow_pc.svg",
 
     // ---
     purpose1: "Tokyoモールへの来店",
@@ -245,8 +245,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/fiveStepFlow_spTb.jpg",
-    CreationFlow_pc: "/fiveStepFlow_pc.jpg",
+    CreationFlow_spTb: "/fiveStepFlow_spTb.svg",
+    CreationFlow_pc: "/fiveStepFlow_pc.svg",
     // ---
     purpose1: "新発売商品の購入",
     concept1: "水がしたたる透明感",
@@ -276,8 +276,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/fiveStepFlow_spTb.jpg",
-    CreationFlow_pc: "/fiveStepFlow_pc.jpg",
+    CreationFlow_spTb: "/fiveStepFlow_spTb.svg",
+    CreationFlow_pc: "/fiveStepFlow_pc.svg",
     // ---
     purpose1: "新商品の購入、認知",
     concept1: "ワクワク感",
@@ -311,8 +311,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/fiveStepFlow_spTb.jpg",
-    CreationFlow_pc: "/fiveStepFlow_pc.jpg",
+    CreationFlow_spTb: "/fiveStepFlow_spTb.svg",
+    CreationFlow_pc: "/fiveStepFlow_pc.svg",
     // ---
     purpose1: "転職エージェントへの登録",
     concept1: "高級感、ハイクラス感",
@@ -346,8 +346,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/fiveStepFlow_spTb.jpg",
-    CreationFlow_pc: "/fiveStepFlow_pc.jpg",
+    CreationFlow_spTb: "/fiveStepFlow_spTb.svg",
+    CreationFlow_pc: "/fiveStepFlow_pc.svg",
     // ---
     purpose1: "ターゲット層の女性に雑誌を購買、認知",
     concept1: "憧れる素敵な女性になりたい",
@@ -379,8 +379,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/fiveStepFlow_spTb.jpg",
-    CreationFlow_pc: "/fiveStepFlow_pc.jpg",
+    CreationFlow_spTb: "/fiveStepFlow_spTb.svg",
+    CreationFlow_pc: "/fiveStepFlow_pc.svg",
     // ---
     purpose1: "オンラインで早期予約してもらう",
     concept1: "インパクト",
@@ -412,8 +412,8 @@ const Works = () => {
     scoop: "design",
     tool: "figma",
     schedule: "2024/1/22~1/27",
-    CreationFlow_spTb: "/fiveStepFlow_spTb.jpg",
-    CreationFlow_pc: "/fiveStepFlow_pc.jpg",
+    CreationFlow_spTb: "/fiveStepFlow_spTb.svg",
+    CreationFlow_pc: "/fiveStepFlow_pc.svg",
     // ---
     purpose1: "オンライン予約をしてもらう",
     concept1: "イケてる",
@@ -444,8 +444,8 @@ const Works = () => {
   //   tool: "figma",
   //   schedule: "2024/2/22~2/23",
   //   prototypeURL: "2024/2/22~2/23",
-  // CreationFlow_spTb: "public/sixStepFlow_sp.jpg",
-  //     CreationFlow_pc: "/sixStepFlow_pc.jpg",
+  // CreationFlow_spTb: "public/sixStepFlow_sp.svg",
+  //     CreationFlow_pc: "/sixStepFlow_pc.svg",
   //   // ---
   //   purpose1: "",
   //   purpose2: "",
