@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { DetileOverViewType } from "../../../detileInfo";
+import { DetileOverViewType } from "../../../../app/detileInfo";
 import styles from "./index.module.scss";
 
 const DetileOverView = ({

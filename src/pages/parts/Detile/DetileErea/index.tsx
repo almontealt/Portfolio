@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { DetileEreaType } from "../../../detileInfo";
+import { DetileEreaType } from "../../../../app/detileInfo";
 import styles from "./index.module.scss";
 import Link from "next/link";
 

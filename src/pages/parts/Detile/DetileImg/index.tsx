@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { DetileImgType } from "../../../detileInfo";
+import { DetileImgType } from "../../../../app/detileInfo";
 import styles from "./index.module.scss";
 
 const DetileImg = ({

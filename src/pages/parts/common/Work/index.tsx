@@ -1,6 +1,6 @@
 import WorksCard from "../WorksCard";
 import styles from "./index.module.scss";
-import { worksType } from "../../../detileInfo";
+import { worksType } from "../../../../app/detileInfo";
 
 const Works = () => {
   // 出張経費申請サービス

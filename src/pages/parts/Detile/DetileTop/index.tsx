@@ -1,4 +1,4 @@
-import { DetileTopType } from "../../../detileInfo";
+import { DetileTopType } from "../../../../app/detileInfo";
 import styles from "./index.module.scss";
 import Image from "next/image";
 

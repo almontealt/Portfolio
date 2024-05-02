@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./index.module.scss";
 import Image from "next/image";
-import { worksType } from "../../../detileInfo";
+import { worksType } from "../../../../app/detileInfo";
 
 const WorksCard = (props: worksType) => {
   return (
