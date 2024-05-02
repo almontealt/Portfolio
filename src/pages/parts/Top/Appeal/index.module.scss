@@ -1,0 +1,105 @@
+@use "./src/app/variable" as var;
+
+@function sp($pxValue) {
+    $spBreakPoint: 375;
+    @return (($pxValue / $spBreakPoint) * 100) + vw;
+}
+
+@function tb($pxValue) {
+    $psBreakPoint: 768;
+    @return (($pxValue / $psBreakPoint) * 100) + vw;
+}
+
+@function pc($pxValue) {
+    $pcBreakPoint: 1280;
+    @return (($pxValue / $pcBreakPoint) * 100) + vw;
+}
+
+.appeal {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    padding: 0px 16px 0px 16px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    &__p {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5.2px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        animation: 1s fadeup ease-in-out forwards;
+    }
+
+    &__p:before {
+        content: "";
+        background: linear-gradient(transparent 60%, #f2cf39 0%);
+        width: 191px;
+        height: 34px;
+        position: absolute;
+        // left: 5px;
+        // top: 28px;
+        left: -8px;
+        top: 18px;
+        background: var.$color_appeal;
+        z-index: -1;
+    }
+}
+
+// 文字のアニメーション
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    .appeal {
+        padding: 0px 80px;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 200px;
+
+        &__p {
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 5.2px;
+        }
+        &__p:before {
+            width: 241px;
+            height: 34px;
+            left: -30px;
+            top: 24px;
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .appeal {
+        padding: 0px;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 120px;
+        &__p {
+            font-size: 40px;
+        }
+        &__p:before {
+            width: 241px;
+            left: -30px;
+            top: 27px;
+        }
+    }
+}

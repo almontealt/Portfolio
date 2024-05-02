@@ -103,8 +103,15 @@ a {
   color: inherit;
   text-decoration: none;
 }
-li{
+li,ul{
   list-style: none;
+  display: block;
+  /* padding-left: 0px; */
+}
+ul{
+  /* display: none; */
+  list-style: none;
+  padding-left: 0px;
 }
 @media (prefers-color-scheme: dark) {
   html {

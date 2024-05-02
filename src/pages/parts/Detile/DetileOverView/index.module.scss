@@ -1,0 +1,218 @@
+@use "./src/app/variable" as var;
+@function sp($pxValue) {
+    $spBreakPoint: 375;
+    @return (($pxValue / $spBreakPoint) * 100) + vw;
+}
+
+@function tb($pxValue) {
+    $psBreakPoint: 768;
+    @return (($pxValue / $psBreakPoint) * 100) + vw;
+}
+
+@function pc($pxValue) {
+    $pcBreakPoint: 1280;
+    @return (($pxValue / $pcBreakPoint) * 100) + vw;
+}
+
+.detileOverView {
+    margin: 0 auto;
+
+    &__inner {
+        width: 100%;
+    }
+    &__itemList {
+        margin-top: 60px;
+        margin-bottom: 80px;
+        padding: 0px 16px 0px 16px;
+
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 60px;
+        align-self: stretch;
+
+        &_item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            align-self: stretch;
+
+            &_ttl {
+                color: var.$color_text_sub;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 2.6px;
+            }
+            &_detileWrap {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                align-self: stretch;
+            }
+            &_detile {
+                &_txt {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.82px;
+                    display: flex;
+                    &_dots {
+                        display: flex;
+                    }
+                }
+            }
+            &_subWrap {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                align-self: stretch;
+            }
+            &_subOverWrap {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                align-self: stretch;
+            }
+            &_subTtl {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 2.34px;
+                margin-bottom: 16px;
+            }
+        }
+        &_img {
+            &_sp {
+                display: block;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            &_pcTb {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    .detileOverView {
+        margin: 0px;
+        width: 100%;
+
+        &__itemList {
+            width: 608px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            margin-top: 80px;
+            padding: 0px;
+
+            &_item {
+                display: flex;
+                align-items: flex-start;
+                gap: 40px;
+                align-self: stretch;
+                flex-direction: row;
+                &_ttl {
+                    width: 137px;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 2.6px;
+                    &_br {
+                        display: block;
+                    }
+                }
+                &_detileWrap {
+                    width: 435px;
+                }
+                &_detile {
+                    &_txt {
+                        font-size: 14px;
+                    }
+                }
+
+                &_subOverWrap {
+                    gap: 24px;
+                    width: 435px;
+                }
+                &_subTtl {
+                    font-size: 16px;
+                }
+            }
+            &_img {
+                &_sp {
+                    display: none;
+                }
+                &_pcTb {
+                    display: block;
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1281px) {
+    .detileOverView {
+        margin: 0px;
+        width: 100%;
+        &__itemList {
+            margin: 0 auto;
+            margin-top: 120px;
+            margin-bottom: 120px;
+            width: 1000px;
+            padding: 0px;
+
+            &_item {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 60px;
+                &_ttl {
+                    width: 137px;
+                    &_br {
+                        display: block;
+                    }
+                }
+                &_detileWrap {
+                    width: 780px;
+                }
+                &_subOverWrap {
+                    width: 780px;
+                    gap: 24px;
+                }
+                &_detile {
+                    &_txt {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &_img {
+                &_sp {
+                    display: none;
+                }
+                &_pcTb {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}
