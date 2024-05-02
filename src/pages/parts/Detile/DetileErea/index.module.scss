@@ -41,9 +41,9 @@
                 color: var.$color_text_main;
                 font-size: 14px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 500;
                 line-height: normal;
-                letter-spacing: 2.08px;
+                letter-spacing: 1.56px;
             }
             &_flow {
                 display: flex;
@@ -63,14 +63,18 @@
                     display: none;
                 }
             }
+            &_btnWrap {
+                display: flex;
+                padding: 8px 16px;
+                align-items: center;
+                gap: 4px;
+                border-radius: 5px;
+                background: var.$color_bg_button;
+            }
             &_protoTypeURL,
             &_iconWrap {
                 position: relative;
                 vertical-align: middle;
-                color: #0000ff;
-            }
-            &_protoIcon {
-                color: #0000ff;
             }
             &_protoTypeURL:hover {
                 border-bottom: 1px solid var.$color_text_main;

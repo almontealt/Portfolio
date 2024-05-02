@@ -140,8 +140,10 @@ const Works = () => {
     concept1: "安心感、不安軽減",
     concept2: "ゴールに向かっていくイメージ",
     target1: "UIデザイナーやUIデザインの学習をしたい20代~30代",
-    IllustrationSp: "",
-    IllustrationPcTb: "",
+    IllustrationSp:
+      "/UIUXdesignLearningThumbnail/UIUXdesignLearningThumbnail_inset_sp.svg",
+    IllustrationPcTb:
+      "/UIUXdesignLearningThumbnail/UIUXdesignLearningThumbnail_inset_pc.svg",
     // ---
     oneKnotTxt1:
       "学習意欲の高い＆どうやって勉強したら良いわからず不安を抱えているユーザーに、山に登っているようなイラストで「今ゴールに向かって進んでいるよ。ゴールに必ずたどり着くよ」というメッセージ性を込めた",

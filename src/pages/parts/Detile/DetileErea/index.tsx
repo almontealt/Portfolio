@@ -32,21 +32,23 @@ const DetileErea = ({
               <p className={styles.detileErea__itemList_item_ttl}>
                 プロトタイプ
               </p>
-              <a
-                className={`${styles.detileErea__itemList_item_txt} ${styles.detileErea__itemList_item_protoTypeURL}`}
-                href={prototypeURL}
-              >
-                表示する
-                <span className={styles.detileErea__itemList_item_iconWrap}>
-                  <Image
-                    src="/OpenInNew.svg"
-                    alt=""
-                    width={16}
-                    height={16}
-                    className={styles.detileErea__itemList_item_Protoicon}
-                  />
-                </span>
-              </a>
+              <div className={styles.detileErea__itemList_item_btnWrap}>
+                <a
+                  className={`${styles.detileErea__itemList_item_txt} ${styles.detileErea__itemList_item_protoTypeURL}`}
+                  href={prototypeURL}
+                >
+                  表示する
+                  <span className={styles.detileErea__itemList_item_iconWrap}>
+                    <Image
+                      src="/OpenInNew.svg"
+                      alt=""
+                      width={16}
+                      height={16}
+                      className={styles.detileErea__itemList_item_Protoicon}
+                    />
+                  </span>
+                </a>
+              </div>
             </li>
           ) : (
             <></>
