@@ -56,7 +56,7 @@ const DetileErea = ({
         </ul>
         <ul className={styles.detileErea__itemList_itemList}>
           <li className={styles.detileErea__itemList_item_flow}>
-            <p className={styles.detileErea__itemList_item_ttl}>作成フロー</p>
+            <p className={styles.detileErea__itemList_item_ttl}>作成ー</p>
             <Image
               src={CreationFlow_spTb}
               width={343}
